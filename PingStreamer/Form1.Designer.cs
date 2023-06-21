@@ -28,17 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.settings_panel = new System.Windows.Forms.Panel();
             this.timeStatistic_panel = new System.Windows.Forms.Panel();
             this.SelectedResult_panel = new System.Windows.Forms.Panel();
             this.sourses_groupBox = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.sourses_treeView = new System.Windows.Forms.TreeView();
-            this.results_panel = new System.Windows.Forms.Panel();
-            this.results_dataGridView = new System.Windows.Forms.DataGridView();
             this.sourses_groupBox.SuspendLayout();
-            this.results_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.results_dataGridView)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // settings_panel
@@ -76,6 +75,31 @@
             this.sourses_groupBox.TabIndex = 3;
             this.sourses_groupBox.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(209, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(684, 430);
+            this.panel1.TabIndex = 4;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(684, 430);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // sourses_treeView
             // 
             this.sourses_treeView.BackColor = System.Drawing.SystemColors.Control;
@@ -86,60 +110,21 @@
             this.sourses_treeView.Size = new System.Drawing.Size(196, 97);
             this.sourses_treeView.TabIndex = 1;
             // 
-            // results_panel
-            // 
-            this.results_panel.Controls.Add(this.results_dataGridView);
-            this.results_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.results_panel.Location = new System.Drawing.Point(209, 35);
-            this.results_panel.Name = "results_panel";
-            this.results_panel.Padding = new System.Windows.Forms.Padding(3, 6, 3, 1);
-            this.results_panel.Size = new System.Drawing.Size(684, 430);
-            this.results_panel.TabIndex = 4;
-            // 
-            // results_dataGridView
-            // 
-            this.results_dataGridView.AllowUserToAddRows = false;
-            this.results_dataGridView.AllowUserToDeleteRows = false;
-            this.results_dataGridView.AllowUserToOrderColumns = true;
-            this.results_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.results_dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.results_dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.results_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.results_dataGridView.ColumnHeadersVisible = false;
-            this.results_dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.results_dataGridView.DefaultCellStyle = dataGridViewCellStyle1;
-            this.results_dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.results_dataGridView.Location = new System.Drawing.Point(3, 6);
-            this.results_dataGridView.Name = "results_dataGridView";
-            this.results_dataGridView.ReadOnly = true;
-            this.results_dataGridView.RowHeadersVisible = false;
-            this.results_dataGridView.Size = new System.Drawing.Size(678, 423);
-            this.results_dataGridView.TabIndex = 0;
-            this.results_dataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.results_dataGridView_CellFormatting);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 660);
-            this.Controls.Add(this.results_panel);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.sourses_groupBox);
             this.Controls.Add(this.SelectedResult_panel);
             this.Controls.Add(this.timeStatistic_panel);
             this.Controls.Add(this.settings_panel);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.sourses_groupBox.ResumeLayout(false);
-            this.results_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.results_dataGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -151,8 +136,8 @@
         private System.Windows.Forms.Panel SelectedResult_panel;
         private System.Windows.Forms.GroupBox sourses_groupBox;
         private System.Windows.Forms.TreeView sourses_treeView;
-        private System.Windows.Forms.Panel results_panel;
-        private System.Windows.Forms.DataGridView results_dataGridView;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

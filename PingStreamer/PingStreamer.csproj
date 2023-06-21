@@ -52,10 +52,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\CheckInfo.cs" />
-    <Compile Include="Models\ScanResult.cs" />
-    <Compile Include="Models\ScanResults.cs" />
-    <Compile Include="Models\ScanSettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
