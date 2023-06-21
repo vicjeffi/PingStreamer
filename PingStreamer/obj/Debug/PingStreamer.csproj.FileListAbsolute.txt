@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\PingStreamer\PingStreamer\bin\Debug\PingStreamer.exe.config
+C:\Users\user\source\repos\PingStreamer\PingStreamer\bin\Debug\PingStreamer.exe
+C:\Users\user\source\repos\PingStreamer\PingStreamer\bin\Debug\PingStreamer.pdb
+C:\Users\user\source\repos\PingStreamer\PingStreamer\obj\Debug\PingStreamer.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\PingStreamer\PingStreamer\obj\Debug\PingStreamer.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\PingStreamer\PingStreamer\obj\Debug\PingStreamer.Form1.resources
+C:\Users\user\source\repos\PingStreamer\PingStreamer\obj\Debug\PingStreamer.Properties.Resources.resources
+C:\Users\user\source\repos\PingStreamer\PingStreamer\obj\Debug\PingStreamer.csproj.GenerateResource.cache
+C:\Users\user\source\repos\PingStreamer\PingStreamer\obj\Debug\PingStreamer.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\PingStreamer\PingStreamer\obj\Debug\PingStreamer.exe
+C:\Users\user\source\repos\PingStreamer\PingStreamer\obj\Debug\PingStreamer.pdb

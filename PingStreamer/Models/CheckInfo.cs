@@ -141,7 +141,7 @@ namespace PingStreamer.Models
         public InvalidCheckInfoDataException() : base() { }
         public InvalidCheckInfoDataException(string message) : base(message) { }
         public InvalidCheckInfoDataException(string message, Exception inner) : base(message, inner) { }
-        
+
         // Не для того Эксепшона, но пусть будет...
         //public override string ToString()
         //{
