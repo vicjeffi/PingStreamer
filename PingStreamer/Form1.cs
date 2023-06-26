@@ -1,4 +1,5 @@
 ﻿using PingStreamer.Models;
+using PingStreamer.AdditionalForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,9 @@ namespace PingStreamer
         public Form1()
         {
             InitializeComponent();
+
+            //View Settings
+            ExpandSousesTreeAllNodes();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -45,6 +49,18 @@ namespace PingStreamer
                 }
             }
 
+        }
+        private void ExpandSousesTreeAllNodes()
+        {
+            foreach(TreeNode node in sourses_treeView.Nodes)
+            {
+                node.Expand();
+            }
+        }
+
+        private void addSourse_toolItem_Click(object sender, EventArgs e)
+        {
+            AddingTreeBranchForm.getInstance().Show();
         }
     }
 }
